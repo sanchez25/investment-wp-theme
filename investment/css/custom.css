@@ -1,0 +1,558 @@
+@font-face {
+    font-style: normal;
+    font-family: "GothamPro";
+    font-weight: 700;
+    src: url('https://bubnovseo.ru/wp-content/themes/investment/fonts/Gotham-Pro-Bold.ttf');
+    font-display: swap;
+}
+@font-face {
+    font-style: normal;
+    font-family: "Montserrat";
+    font-weight: 400;
+    src: url('https://bubnovseo.ru/wp-content/themes/investment/fonts/Montserrat.ttf');
+    font-display: swap;
+}
+@font-face {
+    font-style: normal;
+    font-family: "Montserrat";
+    font-weight: 600;
+    src: url('https://bubnovseo.ru/wp-content/themes/investment/fonts/Montserrat-Bold.ttf');
+    font-display: swap;
+}
+
+body {
+    margin: 0 !important;
+}
+
+input,
+input:active,
+input:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+textarea,
+textarea:active,
+textarea:focus {
+    outline: 0;
+    outline-offset: 0;
+    resize: none;
+}
+
+h1 {
+    font-family: "GothamPro", sans-serif;
+    font-weight: 700;
+    font-size: 46px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "TenorSans";
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: 0.2px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #E7DAC9;
+}
+
+/* Шапка */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    -webkit-transition: .3s;
+    transition: .2s;
+}
+
+.container-block {
+    padding: 0 100px;
+}
+
+.header-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    transition: .2s;
+}
+
+#menu-menu-1 {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item a {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0 30px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    transition: .3s;
+    color: #fff;
+    text-decoration: none;
+}
+
+.current-menu-item a {
+    color: #000;
+}
+
+.menu-item a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.mobile-btn {
+    display: none;
+    align-items: center;
+}
+
+.menu-mobile-button {
+    background-color: unset;
+    border: none;
+}
+
+.menu-mobile-button span {
+    width: 20px;
+    height: 2px;
+    margin-bottom: 7px;
+    display: block;
+    background: #fff;
+}
+
+.menu-mobile-button span:last-child {
+    margin-bottom: 0;
+}
+
+.mobile-menu {
+    background-color: #000 !important;
+    width: 250px !important;
+}
+
+.menu-content-head {
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px;
+}
+
+.close-block-button {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-image: url("https://bubnovseo.ru/wp-content/themes/investment/img/close-menu.svg");
+    background-color: unset;
+    border: none;
+}
+
+#menu-menu-2 {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu-menu-2 li a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+}
+
+/* Main */
+
+.main-block {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+}
+
+.main-block img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    filter: brightness(70%);
+    object-fit: cover;
+}
+
+.main-block-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 140px;
+    left: 0;
+    width: 100%;
+}
+
+.main-title {
+    color: #fff;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+/* Footer */
+
+footer {
+    background: #000;
+}
+
+.footer-block {
+    padding: 70px 0;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item:first-child {
+    margin-bottom: 35px;
+}
+
+.footer-title {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.footer-subtitle {
+    font-weight: 400;
+    font-family: "Montserrat";
+    font-size: 13px;
+    color: #787878;
+}
+
+.footer-item p {
+    font-weight: 400;
+    font-family: "Montserrat";
+    font-size: 13px;
+    color: #787878;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.footer-item p:last-child {
+    margin-bottom: 0;
+}
+
+.footer-item p span {
+    color: #fff;
+    font-weight: 700;
+}
+
+.footer-item p a {
+    text-decoration: none;
+    color: #787878;
+}
+
+.footer-item p a:hover {
+    text-decoration: underline;
+    color: #787878;
+}
+
+/* Page */
+
+.header-page {
+    background-image: url("https://bubnovseo.ru/wp-content/themes/investment/img/bg-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 5%;
+    padding-bottom: 60px;
+}
+
+.nav-tab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.page-h1 {
+    font-size: 46px;
+    font-family: "Montserrat";
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: unset !important;
+    border: none;
+}
+
+.nav-tabs .nav-link:hover {
+    border: none;
+}
+
+.nav-tabs .nav-link {
+    border: none !important;
+}
+
+#nav-tab {
+    border-bottom: none;
+}
+
+.nav-link {
+    color: #000 !important;
+    font-size: 25px !important;
+    font-weight: 700 !important;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+}
+
+.nav-link.active {
+    color: rgb(222, 32, 3) !important;
+}
+
+.tab-img {
+    position: relative;
+}
+
+.tab-img-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 120px;
+    left: 70px;
+    width: 520px;
+}
+
+.tab-img-text span {
+    display: block;
+    font-size: 36px;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.tab-img img {
+    display: block;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.tab-text {
+    padding: 100px 0 120px 0;
+}
+
+.tab-text p {
+    font-size: 25px;
+    font-family: "Montserrat";
+    color: #000;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.tab-text p br {
+    display: none;
+}
+
+.tab-text p:last-child {
+    margin-bottom: 0;
+}
+
+.tab-text ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.tab-text ul li {
+    font-size: 25px;
+    font-family: "Montserrat";
+    color: #000;
+    line-height: 1.5;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.tab-text ul li:last-child {
+    margin-bottom: 0;
+}
+
+.tab-text ul li:before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -30px;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://bubnovseo.ru/wp-content/themes/investment/img/rectangle-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.col-title {
+    color: #000;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-weight: 700;
+    display: block;
+}
+
+.col-subtitle {
+    color: #000;
+    display: block;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.col-icon {
+    margin-bottom: 60px;
+}
+
+.col-md br {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-link {
+        font-size: 18px !important;
+    }
+    .tab-text p {
+        font-size: 18px;
+    }
+    .tab-text ul li {
+        font-size: 18px;
+    }
+    .tab-text ul li:before {
+        top: 4px;
+    }
+
+    .col-subtitle {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .nav-tab {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .header-block {
+        padding: 35px 0;
+    }
+    #menu-menu-1 {
+        display: none;
+    }
+    .mobile-btn {
+        display: flex;
+    }
+
+    .main-title, .page-h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav-link {
+        font-size: 16px !important;
+    }
+    .tab-text p {
+        font-size: 16px;
+    }
+    .tab-text ul li {
+        font-size: 16px;
+    }
+    .tab-img img {
+        height: 350px;
+    }
+    .tab-img-text {
+        width: 100%;
+        text-align: center;
+        left: 0;
+        top: 0;
+        justify-content: center;
+        height: 100%;
+        padding: 0 30px;
+    }
+    .tab-img-text span {
+        font-size: 24px;
+    }
+
+    .col-subtitle {
+        margin-bottom: 25px;
+    }
+    .tab-text .row .col-md {
+        margin-bottom: 30px;
+    }
+    .tab-text .row .col-md:last-child {
+        margin-bottom: 0;
+    }
+    .col-icon {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header-page {
+        padding-bottom: 50px;
+    }
+    .nav-tab {
+        margin-top: 60px;
+    }
+
+    .main-block-text {
+        bottom: 0;
+        height: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #nav-tab {
+        justify-content: center;
+    }
+    .nav-link {
+        font-size: 14px !important;
+    }
+    .tab-text {
+        padding: 50px 0 60px 0;
+    }
+    .tab-text p {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .tab-text ul li {
+        font-size: 14px;
+    }
+    .tab-text ul li:before {
+        width: 15px;
+        height: 15px;
+        top: 3px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-title, .page-h1 {
+        font-size: 22px;
+    }
+}
